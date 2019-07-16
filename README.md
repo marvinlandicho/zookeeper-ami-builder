@@ -13,21 +13,10 @@ so most of the commands and instruction here should work in a Mac.
 Building the base image requires the id of the latest Debian AMI files
 for the region where you wish to build the AMI.
 
-#### Packer Installation
-
-[here](https://www.packer.io/docs/installation.html).
-
-#### AWS Command Line Interface Installation
-
-[here](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
-
 #### Debian AMI
 
 This AMI will be based on an official Debian AMI. The latest version of that
 AMI will be used.
-
-A list of all the Debian AMI id's can be found at the Debian official page:
-[Debian official Amazon EC2 Images](https://wiki.debian.org/Cloud/AmazonEC2Image/)
 
 ### Running packer
 
@@ -82,6 +71,8 @@ To cconfigure a multi-node zookeeper
 ```
 zookeeper_config -E -i 1 -n 1:zookeeper01.mydomain.tld -n 2:zookeeper02.mydomain.tld,3:zookeeper03.mydomain.tld -S
 ```
+
+
 
 The script should be run as sudo user or root.
 
